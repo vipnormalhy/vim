@@ -33,7 +33,7 @@ Plugin 'Tagbar'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'Syntastic'
 Plugin 'Python-mode-klen'
-Plugin 'Solarized'
+Plugin 'Indent-Guides'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -166,7 +166,7 @@ filetype on
 "set ruler
 syntax on
 set background=dark
-colorscheme solarized
+colorscheme evening
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -181,3 +181,25 @@ set foldmethod=indent
 set encoding=utf-8
 set fileencoding=utf-8
 set fileencodings=utf-8,ucs-bom,gbk,gb2312,cp936
+
+set laststatus=2
+set t_Co=256
+
+" indent guides settings
+let g:indent_guides_enable_on_vim_startup=1
+let g:indent_guides_start_level=1
+let g:indent_guides_guide_size=1
+let g:indent_guides_tab_guides=0
+
+" python mode settings
+let g:pymode_warning=1
+" let g:pymode_trim_whitespaces=1
+" let g:pymode_python='python3'
+let g:pymode_indent=1
+let g:pymode_folding=1
+let g:pymode_lint=1
+let g:pymode_lint_on_fly=0
+let g:pymode_lint_checkers=['pyflakes', 'pep8']
+let g:pymode_rope_lookup_project=0
+let g:pymode_rope_goto_definition_cmd='goto'
+"let g:pymode_syntax_indent_errors=g:pymode_syntax_all
