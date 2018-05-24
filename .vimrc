@@ -33,6 +33,7 @@ Plugin 'Tagbar'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'Syntastic'
 Plugin 'Python-mode-klen'
+Plugin 'Solarized'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -164,7 +165,8 @@ filetype on
 
 "set ruler
 syntax on
-colorscheme evening
+set background=dark
+colorscheme solarized
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
