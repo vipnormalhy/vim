@@ -39,6 +39,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'Syntastic'
 Plugin 'Python-mode-klen'
 Plugin 'Indent-Guides'
+Plugin 'vim-airline/vim-airline'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -187,7 +188,6 @@ set encoding=utf-8
 set fileencoding=utf-8
 set fileencodings=utf-8,ucs-bom,gbk,gb2312,cp936
 
-set laststatus=2
 set t_Co=256
 
 " indent guides settings
@@ -208,3 +208,19 @@ let g:pymode_lint_checkers=['pyflakes', 'pep8']
 let g:pymode_rope_lookup_project=0
 let g:pymode_rope_goto_definition_cmd='goto'
 "let g:pymode_syntax_indent_errors=g:pymode_syntax_all
+
+" display info in statu line
+" set statusline=
+" set statusline+="#PmenuSel#
+" set statusline+=%#LineNr#
+" set statusline+=\ %f
+" set statusline+=%m\
+" set statusline+=%=
+" set statusline+=%#CursorColumn#
+" set statusline+=\ %y
+" set statusline+=\ %{&fileencoding:&fileencoding:&encoding}
+" set statusline+=\ [%{&fileformat}\]
+" set statusline+=\ %p%%
+" set statusline+=\ %l:%c
+" set statusline+=\ 
+" set laststatus=2
