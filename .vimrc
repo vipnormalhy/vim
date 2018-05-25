@@ -40,6 +40,7 @@ Plugin 'Syntastic'
 Plugin 'Python-mode-klen'
 Plugin 'Indent-Guides'
 Plugin 'vim-airline/vim-airline'
+Plugin 'Conque-Shell'
 
 if has('win32')
   Plugin 'Omnisharp/omnisharp-vim'
@@ -212,10 +213,11 @@ let g:pymode_indent=1
 let g:pymode_folding=1
 let g:pymode_lint=1
 let g:pymode_lint_on_fly=0
+let g:pymode_lint_ignore="E501"
 let g:pymode_lint_checkers=['pyflakes', 'pep8']
 let g:pymode_rope_lookup_project=0
-let g:pymode_rope_goto_definition_cmd='goto'
-"let g:pymode_syntax_indent_errors=g:pymode_syntax_all
+" let g:pymode_rope_goto_definition_cmd='goto'
+" let g:pymode_syntax_indent_errors=g:pymode_syntax_all
 
 " display info in statu line
 " set statusline=
@@ -241,3 +243,6 @@ endif
 
 " fix ctrlp cannot find csharp files bug
 let g:ctrlp_max_files=0
+
+" pymode
+let g:pymode_rope=1
