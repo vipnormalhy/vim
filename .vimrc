@@ -41,6 +41,10 @@ Plugin 'Python-mode-klen'
 Plugin 'Indent-Guides'
 Plugin 'vim-airline/vim-airline'
 
+if has('win32')
+  Plugin 'Omnisharp/omnisharp-vim'
+endif
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -228,3 +232,9 @@ let g:pymode_rope_goto_definition_cmd='goto'
 " set statusline+=\ %l:%c
 " set statusline+=\ 
 " set laststatus=2
+
+" csharp
+if has('win32')
+  let g:OmniSharp_server_path='C:\Users\vipno\Downloads\omnisharp.http-win-x64\OmniSharp.exe'
+	let g:Omnisharp_stop_server = 2
+endif
