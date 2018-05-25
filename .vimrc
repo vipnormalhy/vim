@@ -238,3 +238,6 @@ if has('win32')
   let g:OmniSharp_server_path='C:\Users\vipno\Downloads\omnisharp.http-win-x64\OmniSharp.exe'
 	let g:Omnisharp_stop_server = 2
 endif
+
+" fix ctrlp cannot find csharp files bug
+let g:ctrlp_max_files=0
