@@ -188,7 +188,11 @@ set encoding=utf-8
 set fileencoding=utf-8
 set fileencodings=utf-8,ucs-bom,gbk,gb2312,cp936
 
-set t_Co=256
+if has('win32')
+  set t_Co=256
+else
+  set term=xterm-256color
+endif
 
 " indent guides settings
 let g:indent_guides_enable_on_vim_startup=1
