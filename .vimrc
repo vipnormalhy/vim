@@ -41,6 +41,7 @@ Plugin 'Python-mode-klen'
 Plugin 'Indent-Guides'
 Plugin 'vim-airline/vim-airline'
 Plugin 'Conque-Shell'
+Plugin 'svncommand.vim'
 
 if has('win32')
   Plugin 'Omnisharp/omnisharp-vim'
