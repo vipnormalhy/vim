@@ -256,8 +256,6 @@ set listchars=tab:\|\
 " YouCompleteMe
 if has("win32")
 	let g:ycm_server_python_interpreter='C:\Python27x86\python.exe'
-else
-	let g:ycm_server_python_interpreter='/usr/bin/python'
 endif
 
 let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
