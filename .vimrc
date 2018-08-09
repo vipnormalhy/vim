@@ -126,7 +126,7 @@ set fdl=0
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Text options
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"set expandtab
+set noexpandtab
 set shiftwidth=2
 set tabstop=2
 "set softtabstop=4
