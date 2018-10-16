@@ -42,6 +42,9 @@ Plugin 'Indent-Guides'
 Plugin 'vim-airline/vim-airline'
 Plugin 'Conque-Shell'
 Plugin 'svncommand.vim'
+Plugin 'godlygeek/tabular'
+Plugin 'jremmen/vim-ripgrep'
+Plugin 'yssl/QFEnter'
 
 if has('win32')
   Plugin 'Omnisharp/omnisharp-vim'
@@ -258,4 +261,4 @@ if has("win32")
 	let g:ycm_server_python_interpreter='C:\Python27x86\python.exe'
 endif
 
-let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
+let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
